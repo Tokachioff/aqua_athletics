@@ -1,0 +1,142 @@
+body {
+    margin: 0px;
+    font-family: 'Segoe UI', sans-serif;
+    width: 100%;
+    background: linear-gradient(to bottom, #a8edea, #fed6e3);
+}
+
+/* MENU HEADER */
+header{
+    border: 2px;
+    border-style:solid;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-color: black;
+    background: #00b4d8;
+    position: fixed;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    z-index: 1000;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+header nav div:last-child{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2vw;
+    position: relative;
+    width: auto;
+    top: 1vh;
+    right: 5vw;
+    color: blueviolet;
+    text-decoration: underline;
+    font-size: 3ch;
+}
+
+header nav div:last-child p{
+    display: inline;
+}
+
+header img {
+    max-width: 128px;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+.placeholder {
+    height: 100px;
+}
+
+
+
+h1{
+    text-align: center;
+}
+
+/* Formulaires*/
+
+form{
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    width: 45vw;
+    max-width: 45%;
+    margin-top: 10px;
+    height: 3vh;
+}  
+
+textarea{
+    display: flex;
+    width: 30vw;
+    height: 30vh;
+    margin: auto;
+    resize: none;
+}
+
+select{
+    width: 45vw;
+    max-width: 45%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+    
+form div{
+    width: 100vw;
+    margin-top: 40px;
+}
+
+
+
+button{
+    margin: auto;
+    margin-top: 2%;
+    width: 4vw;
+    min-width: fit-content;
+    background-color: rgb(240, 240, 240);
+    border-color:gray;
+}
+
+input[type="email"]:not(:placeholder-shown):invalid{
+    border-color:tomato;
+    background-color: pink;
+}
+
+iframe{
+    margin-left: 30%;
+    width: 40vw;
+    height: 60vh;
+    max-height: 450px;
+    margin-top: 5%;
+    border: 2px solid black;
+}
+
+@media (max-width: 768px) {
+    input, textarea, select {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    textarea{
+        height: 15vh;
+        width: 98.5%;
+    }
+
+    iframe{
+        width: 80vw;
+        height: 30vh;
+        margin-left: 10%;
+    }
+}
